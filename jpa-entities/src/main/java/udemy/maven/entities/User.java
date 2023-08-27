@@ -1,4 +1,4 @@
-package com.udemy.maven;
+package udemy.maven.entities;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;

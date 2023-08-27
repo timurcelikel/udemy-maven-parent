@@ -7,10 +7,20 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>from-intellij</artifactId>
+    <artifactId>web-app</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>udemy.maven</groupId>
+            <artifactId>jpa-entities</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>udemy.maven</groupId>
+            <artifactId>web-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

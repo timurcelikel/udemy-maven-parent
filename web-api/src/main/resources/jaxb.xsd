@@ -6,7 +6,7 @@
     <xsd:annotation>
         <xsd:appinfo>
             <jaxb:schemaBindings>
-                <jaxb:package name="com.udemy.webapi"/>
+                <jaxb:package name="udemy.maven.webapi"/>
             </jaxb:schemaBindings>
         </xsd:appinfo>
     </xsd:annotation>

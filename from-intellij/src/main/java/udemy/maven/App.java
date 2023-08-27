@@ -1,4 +1,4 @@
-package org.example;
+package udemy.maven;
 
 /**
  * Hello world!
