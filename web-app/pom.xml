@@ -4,7 +4,7 @@
     <parent>
         <groupId>udemy.maven</groupId>
         <artifactId>udemy-maven-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>web-app</artifactId>
@@ -14,12 +14,12 @@
         <dependency>
             <groupId>udemy.maven</groupId>
             <artifactId>jpa-entities</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>udemy.maven</groupId>
             <artifactId>web-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
