@@ -22,7 +22,30 @@
     <java.version>17</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
+    <mockito.version>5.5.0</mockito.version>
+    <commons-lang3.version>3.13.0</commons-lang3.version>
   </properties>
+
+  <!-- Only the child modules that have this dependency in their dependencies will get this version 5.5.0
+  without the need of specifying the dependency. They can also implement their own dependency with a different version -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>${mockito.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <!-- Every child module gets this dependency -->
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
